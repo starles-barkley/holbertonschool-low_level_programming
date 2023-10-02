@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * main - check if c is uppercase
+ * _isupper - check if c is uppercase
  *
  * return - (1 if uppercase; 0 if else)
  *
  */
 
-char main (c)
+int _isupper (int c)
 {
 	if c = [A-Z]
 	{
