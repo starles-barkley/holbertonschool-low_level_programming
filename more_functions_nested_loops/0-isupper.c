@@ -5,7 +5,7 @@
  *
  * @c: the character to check
  *
- * Return : 1 or 0
+ * Return: 1 or 0
  *
  */
 
