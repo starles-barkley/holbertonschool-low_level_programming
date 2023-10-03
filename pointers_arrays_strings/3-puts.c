@@ -5,17 +5,16 @@
  *
  * @str: the string
  *
- * Return: length of string
+ * Return: 0
  */
 
 void _puts(char *str)
 {
-	int i = 0;
+	int c;
 
-	while (str[i] != '\0')
+	for (c = 0; str[c] != 0; c++)
 	{
-		_putchar(str[i]);
-		i++;
+		_putchar(str[c]);
 	}
 	_putchar('\n');
 }
