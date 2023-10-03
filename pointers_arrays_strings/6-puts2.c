@@ -11,7 +11,7 @@
 void puts2(char *str)
 {
 	int c;
-	char 1;
+	char l;
 
 	for (c = 0; str [c] != 0; c++)
 	{
