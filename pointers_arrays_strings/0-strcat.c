@@ -4,13 +4,13 @@
  * *_strcat - concatenate 2 strings
  * @dest: char type string
  * @src: char type string
- * Return: pointer to dest 
+ * Return: pointer to dest
  */
 
 char *_strcat(char *dest, char *src)
 {
 	char *s = dest;
-	
+
 	while (*dest != '\0')
 	{
 		dest++;
