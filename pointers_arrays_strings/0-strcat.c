@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * *_strcpy - copy the string pointed to by pointer src to the buffer pointed to by dest
+ * *_strcat - copy the string pointed to by pointer src to the buffer pointed to by dest
  * @dest: char type string
  * @src: char type string
  * Return: pointer to dest 
  */
 
-char *_strcpy(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i;
 	
