@@ -1,32 +1,61 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * cap_string - capitalizes all words in a string
- * @s: string
- * Return: address of s
+ *_strlen - reset number
+ *Description: This function return a length for some string
+ *@s: pointer char
+ *Return: int length
  */
 
-char *cap_string(char *s)
+int _strlen(char *s)
 {
-	int i = 0, j;
-	char a[] = "\t\n,;.!?\"(){}";
+	int len = 0;
 
-	while (*(s + 1))
+	while (*s++)
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		len++;
+	}
+	return (len);
+}
+/**
+ *cap_string - changes all lowercase letters
+ *@s1: pointer parameter"
+ *Description: changes all lowercase letters
+ *Return: return pointer
+ */
+char *cap_string(char *s1)
+{
+	int i, j;
+
+	for (i = 0; i < _strlen(s1) - 1; i++)
+	{
+		if (
+			s1[i] == ' ' ||
+			s1[i] == '\t' ||
+			s1[i] == '\n' ||
+			s1[i] == ',' ||
+			s1[i] == ';' ||
+			s1[i] == '.' ||
+			s1[i] == '!' ||
+			s1[i] == '?' ||
+			s1[i] == '"' ||
+			s1[i] == '(' ||
+			s1[i] == ')' ||
+			s1[i] == '{' ||
+			s1[i] == '}' ||
+			i == 0
+		)
 		{
-			if (i == 0)
-				*(s + i) -= 'a' - 'A';
-			else
+			for (j = 'a'; j <= 'z'; j++)
 			{
-				for (j = 0; j <= 12; j++)
+				if (s1[i + 1] == j && i != 0)
 				{
-					if (a[j] == *(s + i - 1))
-						*(s + i) -= 'a' - 'A';
+					s1[i + 1] = j - 32;
+				} else if (s1[i] == j && i == 0)
+				{
+					s1[i] = j - 32;
 				}
 			}
 		}
-		i++;
 	}
-	return (s);
+	return (s1);
 }
