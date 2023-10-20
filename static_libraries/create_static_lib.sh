@@ -1,5 +1,5 @@
 #!/bin/bash
+# Compile all .c files to .o files
 gcc -c *.c
-ar rc liball.a *.o
-ranlib liball.a
-rm -f *.o
+# Create a static library from all .o files
+ar rcs liball.a *.o
