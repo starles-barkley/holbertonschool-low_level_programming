@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _strdup - return a ptr to a new string 
+ * _strdup - return a ptr to a new string
  * which is a duplicate of the string
  *
  * @str: input string to be duplicated
